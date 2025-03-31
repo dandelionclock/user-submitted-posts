@@ -7,11 +7,11 @@ Tags: frontend post, submit post, guest post, visitor post, public post
 Author: Jeff Starr
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
-Contributors: specialk
+Contributors: specialk, dandelion
 Requires at least: 4.6
 Tested up to: 6.7
-Stable tag: 20241026
-Version:    20241026
+Stable tag: 20250327
+Version:    20250327
 Requires PHP: 5.6.20
 Text Domain: usp
 Domain Path: /languages
@@ -19,7 +19,15 @@ License: GPL v2 or later
 
 Enable visitors to submit posts and images from the front-end of your site. Many features including anti-spam security, content restriction, and more.
 
+== Added features ==
 
+1. Cloudflare Turnstile has been added as an alternative to Google reCaptcha
+
+2. AI Summary has been added using Deepseek-chat
+
+3. Repurposed Custom Field 1 to Post Excerpt
+
+4. Added extra fields to email alerts (%%custom_checkbox%%, %%category%%, %%tags%%, %%ai_summary%%)
 
 == Description ==
 
@@ -822,6 +830,12 @@ Links, tweets and likes also appreciated. Thanks! :)
 If you like USP, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/user-submitted-posts/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
+**20250327**
+
+* Improves sanitization of custom checkbox field
+* Tests on WordPress 6.8
+
+
 **20241026**
 
 * Replaces deprecated function `get_page_by_title()`
@@ -830,7 +844,7 @@ If you like USP, please take a moment to [give a 5-star rating](https://wordpres
 * Updates plugin settings page
 * Updates all translation files
 * Updates default translation template
-* Tests on WordPress 6.7 (beta)
+* Tests on WordPress 6.7
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/user-submitted-posts.txt](https://plugin-planet.com/wp/changelog/user-submitted-posts.txt)
